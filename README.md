@@ -8,6 +8,13 @@ This Bot uses CLOS to build a processing pipeline.
 
 frist of all check if your machine have SBCL, quicklisp (in your .sbclrc file too)
 
+add cl-telegram-bot to your local-projects
+
+```
+$ cd quicklisp/local-projects
+$ git clone https://github.com/40ants/cl-telegram-bot.git
+```
+
 install the package "cl-telegram-bot/core"
 
 ```
