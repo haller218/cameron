@@ -1,8 +1,10 @@
-#/bin/sh
+#!/bin/sh
 
 curl -O https://beta.quicklisp.org/quicklisp.lisp
 
 sbcl --load quicklisp.lisp --eval "(quicklisp-quickstart:install)(ql:add-to-init-file)"
+
+cd quicklisp/local-projects
 
 git clone https://github.com/40ants/cl-telegram-bot.git
 
