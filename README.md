@@ -8,7 +8,12 @@ This Bot uses CLOS to build a processing pipeline.
 
 frist of all check if your machine have SBCL, quicklisp (in your .sbclrc file too)
 
-install the package "cl-telegram-bot-api"
+install the package "cl-telegram-bot/core"
+
+```
+$ sbcl
+* (ql:quickload "cl-telegram-bot/core")
+```
 
 then
 
