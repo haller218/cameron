@@ -11,7 +11,7 @@ frist of all check if your machine have SBCL, quicklisp (in your .sbclrc file to
 add cl-telegram-bot to your local-projects
 
 ```
-$ cd quicklisp/local-projects
+$ cd ~/quicklisp/local-projects
 $ git clone https://github.com/40ants/cl-telegram-bot.git
 ```
 
@@ -31,15 +31,14 @@ export API_TELEGRAM_BOTNET="youid:keyfrombotfather"
 or just
 
 ```
-echo 'export API_TELEGRAM_BOTNET="youid:keyfrombotfather"' >> /home/$USER/.bashrc
+$ echo 'export API_TELEGRAM_BOTNET="youid:keyfrombotfather"' >> /home/$USER/.bashrc
+$ source ~/.bashrc
 ```
 
 Now run inside Cameron folder
 
 ```
-
 $ sh start.sh
-
 ```
 
 Now, apreciate and Hack Your Own bot make in Common Lisp.
