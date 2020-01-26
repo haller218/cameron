@@ -41,4 +41,4 @@ Now, apreciate and Hack Your Own bot make in Common Lisp.
 
 * [Rei](https://github.com/sovietspaceshipg) – initial version.
 * [Alexander Artemenko](https://github.com/svetlyak40wt) – large refactoring, usage of CLOS classes, etc.
-* [Haller](https://keybase.io/haller218) - Cameron Implementation
+* [Haller](https://keybase.io/haller218) – Cameron Implementation
