@@ -1,16 +1,14 @@
 # Cameron BotNet Telegram
 
-See the [Telegram Bot API](https://core.telegram.org/bots/api).
+See the [Telegram Bot API](https://core.telegram.org/bots/api), [CL-Telegram-API](https://github.com/40ants/cl-telegram-bot.git)
 
-This library uses CLOS to build a processing pipeline.
+This Bot uses CLOS to build a processing pipeline.
 
 ## Quickstart
 
 frist of all check if your machine have SBCL, quicklisp (in your .sbclrc file too)
 
-install the package #cl-telegram-bot-api
-
-
+install the package "cl-telegram-bot-api"
 
 then
 
@@ -18,7 +16,7 @@ begin set the variable and export in your local .bashrc (or in your others shell
 
 export API_TELEGRAM_BOTNET="youid:keyfrombotfather"
 
-our just
+or just
 
 ```
 echo 'export API_TELEGRAM_BOTNET="youid:keyfrombotfather"' >> /home/$USER/.bashrc
