@@ -20,7 +20,7 @@ RUN git clone https://notabug.org/antonearro/cameron
 
 WORKDIR $HOME/cameron
 
-RUN sh install.sh
+CMD ["/bin/bash"]
 
 
 
