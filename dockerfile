@@ -1,16 +1,16 @@
-FROM alpine:latest
+FROM ubuntu:18.04
 
-RUN apk --no-progress update
+RUN apt -qqy update
 
-RUN apk --no-progress upgrade
+RUN apt -qqy upgrade
 
-RUN apk --no-progress add git curl gcc autoconf make automake g++ curl-dev
+RUN apt -qqy install git curl gcc autoconf make automake
 
-RUN apk --no-progress add ecl
+RUN apt -qqy install ecl
 
 ENV HOME=/home/cameron
 
-RUN adduser -h $HOME -u 1111 -D cameron
+RUN useradd -m cameron
 
 USER cameron
 
