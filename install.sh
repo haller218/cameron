@@ -1,12 +1,14 @@
 #!/bin/sh
 
-curl -O https://beta.quicklisp.org/quicklisp.lisp
+RUND="ecl"
 
-sbcl --load quicklisp.lisp --eval "(quicklisp-quickstart:install)^D"
+$RUND -O https://beta.quicklisp.org/quicklisp.lisp
+
+$RUND --load quicklisp.lisp --eval "(quicklisp-quickstart:install)^D"
 
 rm quicklisp.lisp
 
-sbcl --load /home/$USER/quicklisp/setup.lisp --eval "(ql:add-to-init-file)^D"
+$RUND --load /home/$USER/quicklisp/setup.lisp --eval "(ql:add-to-init-file)^D"
 
 cd $HOME/quicklisp/local-projects
 
@@ -16,7 +18,7 @@ cp -Ra cl-telegram-bot $HOME/quicklisp/local-projects
 
 cd -
 
-sbcl --eval "(ql:quickload \"cl-telegram-bot/core\")"
+$RUND --eval "(ql:quickload \"cl-telegram-bot/core\")"
 
 
 

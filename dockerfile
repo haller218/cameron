@@ -4,9 +4,9 @@ RUN apt -qqy update
 
 RUN apt -qqy upgrade
 
-RUN apt -qqy install git curl make gcc
+RUN apt -qqy install git curl
 
-RUN apt -qqy install sbcl
+RUN apt -qqy install ecl
 
 RUN useradd -m cameron
 
@@ -18,7 +18,7 @@ WORKDIR $HOME
 
 RUN git clone https://notabug.org/antonearro/cameron
 
-RUN cd cameron
+WORKDIR $HOME/cameron
 
 RUN sh install.sh
 
