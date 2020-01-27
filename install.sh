@@ -2,7 +2,7 @@
 
 RUND="ecl"
 
-$RUND -O https://beta.quicklisp.org/quicklisp.lisp
+curl -O https://beta.quicklisp.org/quicklisp.lisp
 
 $RUND -load quicklisp.lisp -eval "(quicklisp-quickstart:install)^D"
 
