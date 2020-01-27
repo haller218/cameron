@@ -12,4 +12,4 @@
   :license "MIT"
   :class :package-inferred-system
   :pathname "src"
-  :depends-on ("cl-telegram-bot-api"))
+  :depends-on ("cl-telegram-bot/core"))
