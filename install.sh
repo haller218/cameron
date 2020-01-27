@@ -8,13 +8,17 @@ curl -O https://beta.quicklisp.org/quicklisp.lisp
 
 echo ">>> INSTALL QUICKLISP:"
 
-$RUND -load quicklisp.lisp -eval "(quicklisp-quickstart:install)^D"
+$RUND -load quicklisp.lisp\
+      -eval "(quicklisp-quickstart:install)" \
+      -eval "(quit)"
 
 rm quicklisp.lisp
 
 echo ">>> ADD TO INIT FILE:"
 
-$RUND -load ~/quicklisp/setup.lisp -eval "(ql:add-to-init-file)^D"
+$RUND -load ~/quicklisp/setup.lisp\
+      -eval "(ql:add-to-init-file)"\
+      -eval "(quit)"
 
 cd ~/quicklisp/local-projects
 
@@ -28,4 +32,5 @@ cd -
 
 echo ">>> INSTALL DEPENDECY:"
 
-$RUND -eval "(ql:quickload \"cl-telegram-bot/core\")"
+$RUND -eval "(ql:quickload \"cl-telegram-bot/core\")"\
+      -eval "(quit)"
